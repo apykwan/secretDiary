@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+  background-image: url('diary.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+body {
+  background: none;
+}
+
+.container {
+  text-align: center;
+  margin-top: 200px;
+  width: 480px;
+}
+
+input {
+  margin: 20px;
+}
+
+#logInForm {
+  display: none;
+}
+
+.toggleForms {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+
+#diary {
+  width: 100%;
+  height: 100%;
+}
