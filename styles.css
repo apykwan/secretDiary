@@ -5,15 +5,16 @@ html {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  height: 100%;
 }
 
 body {
   background: none;
+  height: 100%;
 }
 
 .container {
   text-align: center;
-  margin-top: 200px;
   width: 480px;
 }
 
@@ -34,5 +35,13 @@ input {
 
 #diary {
   width: 100%;
+  height: 100%;
+}
+
+#homePageContainer {
+  margin-top: 200px;
+}
+
+.container-fluid {
   height: 100%;
 }

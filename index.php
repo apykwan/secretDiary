@@ -15,7 +15,7 @@
 
   if(array_key_exists("submit", $_POST)) {
     include('connection.php');
-    
+
     if(!$_POST['email']) {
       $error .= "An email address is required. <br>";
     }
@@ -85,9 +85,15 @@
 ?>
 
 <?php include('header.php'); ?>
-    <div class="container">
-      <h1>Secret Diary</h1>
-      <div id="error"><?php echo $error; ?></div>
+    <div id="homePageContainer" class="container">
+      <h1>Store Your Thought</h1>
+      <div id="error">
+        <?php 
+          if($error != "") {
+            echo '<div class="alert alert-danger" role="alert">' . $error . '</div>';
+          }
+        ?>
+      </div>
 
       <!-- SIGN UP FORM -->
       <form method="post" id="signUpForm">
